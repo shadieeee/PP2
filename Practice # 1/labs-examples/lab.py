@@ -35,16 +35,44 @@ print(a // b)
 print(a / b)
 
 # 6 Example
+
+a = input()
+b = input()
+
+print(a**b)
+
 # 7 Example
+
+a = input()
+b = input()
+
+print(a % b)
+
 # 8 Example
+
+a = str(input())
+b = input()
+
+print(a*b)
+
 # 9 Example
 
+a = input()
+print(len(a))
 
 # 10 Example
 
+a = input()
+print(a.upper())
+print(a.lower())
+
+
 # 11 Example
 
+
 # 12 Example
+
+
 # 13 Example
 # 14 Example
 # 15 Example
@@ -52,5 +80,4 @@ print(a / b)
 # 17 Example
 # 18 Example
 # 19 Example
-
 # 20 Example
