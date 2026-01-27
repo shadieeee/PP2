@@ -114,8 +114,36 @@ print(f"{a}{b}")
 
 # 17 Example
 
+a = input()
+b = input()
+
+print(f"{b} {a}")
+
 # 18 Example
+
+a = input()
+
+if a % 2 == 0:
+    print("even")
+else:
+    print("odd")
 
 # 19 Example
 
+a = input()
+b = input()
+c = input()
+
+print(a.replace(b, c))
+
 # 20 Example
+
+a = input()
+b = input()
+
+if a > b:
+    print(a)
+elif b > a:
+    print(b)
+else:
+    print("equal")
