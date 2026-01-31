@@ -1,9 +1,19 @@
-is_raining = True
-is_sunny = False
+# 1 example
+is_active = True
+print(is_active)
 
-print(is_raining)
-print(is_sunny)
+# 2 example
+is_closed = False
+print(is_closed)
 
-age = 18
-is_adult = age >= 18
-print(is_adult)
+# 3 example
+x = 10
+print(x > 5)
+
+# 4 example
+y = 3
+print(y == 3)
+
+# 5 example
+name = "Alex"
+print(bool(name))

@@ -1,9 +1,14 @@
-a = 10
-b = 5
+# 1 example
+print(10 == 10)
 
-print(a == b)   # False
-print(a != b)   # True
-print(a > b)    # True
-print(a < b)    # False
-print(a >= 10)  # True
-print(b <= 5)   # True
+# 2 example
+print(10 != 5)
+
+# 3 example
+print(5 > 2)
+
+# 4 example
+print(4 < 1)
+
+# 5 example
+print(7 >= 7)

@@ -1,18 +1,16 @@
-is_logged_in = True
-is_admin = False
+# 1 example
+print(True and False)
 
-# AND: both must be True
-print(is_logged_in and is_admin)  # False
+# 2 example
+print(True or False)
 
-# OR: at least one must be True
-print(is_logged_in or is_admin)   # True
+# 3 example
+print(not True)
 
-# NOT: reverses the boolean
-print(not is_logged_in)           # False
-
-# Real-life style example
+# 4 example
 age = 20
-has_id = True
+print(age >= 18 and age < 60)
 
-can_enter = age >= 18 and has_id
-print(can_enter)
+# 5 example
+is_student = False
+print(not is_student)
