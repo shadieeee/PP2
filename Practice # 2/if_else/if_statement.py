@@ -1,11 +1,24 @@
-a = 33
-b = 200
+# 1 example
+a = 10
+if a > 5:
+    print("a is greater than 5")
 
-if b > a:  # True st-t
-    print("b is greater than a")  # Continue
+# 2 example
+x = 3
+if x == 3:
+    print("x is 3")
 
-k = 200
-h = 33
+# 3 example
+y = 8
+if y != 5:
+    print("y is not 5")
 
-if h > k:  # False st-t
-    print("b is greater than a")  # Not work
+# 4 example
+temp = 30
+if temp > 25:
+    print("Hot day")
+
+# 5 example
+score = 90
+if score >= 50:
+    print("Passed")
