@@ -21,13 +21,9 @@ print(sum)
 
 # 3 example
 
-a = int(input())
-sum = 0
-
-for i in range(1, a+1):
-    sum += i
-
-print(sum)
+n = int(input())
+a = list(map(int, input().split()))
+print(sum(a))
 
 # 4 example
 
