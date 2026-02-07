@@ -222,16 +222,14 @@ print(count)
 # 18 example
 
 n = int(input())
-arr = [input().strip() for _ in range(n)]
+first = {}
+for i in range(1, n+1):
+    s = input().strip()
+    if s not in first:
+        first[s] = i
 
-first_occurrence = {}
-
-for i in range(n):
-    if arr[i] not in first_occurrence:
-        first_occurrence[arr[i]] = i + 1
-
-for word in sorted(first_occurrence.keys()):
-    print(word, first_occurrence[word])
+for k in sorted(first):
+    print(k, first[k])
 
 
 # 19 example
