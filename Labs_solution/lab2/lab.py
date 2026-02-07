@@ -235,20 +235,17 @@ for k in sorted(first):
 # 19 example
 
 n = int(input())
-episodes = {}
-
+d = {}
 for _ in range(n):
-    line = input().split()
-    name = line[0]
-    count = int(line[1])
-    if name in episodes:
-        episodes[name] += count
+    s, k = input().split()
+    k = int(k)
+    if s in d:
+        d[s] += k
     else:
-        episodes[name] = count
+        d[s] = k
 
-for name in sorted(episodes.keys()):
-    print(name, episodes[name])
-
+for name in sorted(d):
+    print(name, d[name])
 
 # 20 example
 
