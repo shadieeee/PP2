@@ -21,61 +21,41 @@ a = list(map(int, input().split()))
 print(sum(a))
 
 # 4 example
-
 n = int(input())
-nums = list(map(int, input().split()))
-
-sum = 0
-
-for i in nums:
-    if i > 0:
-        sum += 1
-print(sum)
+a = list(map(int, input().split()))
+cnt = 0
+for i in a:
+    if i > 0: 
+        cnt += 1
+print(cnt)
 
 
 # 5 example
-a = int(input())
-isTrue = True
+n = int(input())
 
-while a != 1:
-    if a % 2 == 0:
-        a //= 2  # делим на 2
-    else:
-        isTrue = False
+while n > 1:
+    if n % 2 != 0:
+        print("NO")
         break
-
-print("YES" if isTrue else "NO")
+    n = n // 2
+else:
+    print("YES")
 
 # 6 example
 
 n = int(input())
-nums = list(map(int, input().split()))
-
-max = -100000000000000000000000
-
-for i in nums:
-    if i > max:
-        max = i
-print(max)
+a = list(map(int, input().split()))
+print(max(a))
 
 # 7 example
 
 n = int(input())
-nums = list(map(int, input().split()))
-
-max = -100000000000000000000000
-index = 0
-
-for i in nums:
-    if i > max:
-        max = i
-
-for i, x in enumerate(nums):
-    if x == max:
-        i += 1
-        index += i
+a = list(map(int, input().split()))
+mx = max(a)
+for i in range(len(a)):
+    if a[i] == mx:
+        print(i + 1)
         break
-print(index)
 
 # 8 example
 
@@ -87,18 +67,15 @@ while i <= n:
     i *= 2
 
 # 9 example
-
 n = int(input())
 arr = list(map(int, input().split()))
-
-max_val = max(arr)
-min_val = min(arr)
-
+mx = max(arr)
+mn = min(arr)
 for i in range(n):
-    if arr[i] == max_val:
-        arr[i] = min_val
-
-print(*arr)
+    if arr[i] == mx:
+        arr[i] = mn
+for x in arr:
+    print(x, end=" ")
 
 # 10 example
 
@@ -196,22 +173,19 @@ for num in arr:
 # 17 example
 
 n = int(input())
-numbers = []
-
+f = {}
 for _ in range(n):
-    number = input().strip()
-    numbers.append(number)
+    num = input().strip()
+    if num in f:
+        f[num] += 1
+    else:
+        f[num] = 1
+cnt = 0
+for k in f:
+    if f[k] == 3:
+        cnt += 1
 
-count = 0
-unique_numbers = []
-
-for num in numbers:
-    if num not in unique_numbers:
-        unique_numbers.append(num)
-        if numbers.count(num) == 3:
-            count += 1
-
-print(count)
+print(cnt)
 
 
 # 18 example
