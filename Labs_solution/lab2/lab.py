@@ -258,15 +258,18 @@ for name in sorted(episodes.keys()):
 
 # 20 example
 
-input = sys.stdin.readline
-
 n = int(input())
-document = {}
+doc = {}
 
 for _ in range(n):
-    cmd = input().split()
-    if cmd[0] == "set":
-        document[cmd[1]] = cmd[2]
-    elif cmd[0] == "get":
-        print(document[cmd[1]] if cmd[1]
-              in document else f"KE: no key {cmd[1]} found in the document")
+    parts = input().split()
+    if parts[0] == "set":
+        _, key, value = parts
+        doc[key] = value
+    elif parts[0] == "get":
+        _, key = parts
+        if key in doc:
+            print(doc[key])
+        else:
+            print(f"KE: no key {key} found in the document")
+
