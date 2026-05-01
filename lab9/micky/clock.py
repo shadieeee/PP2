@@ -26,6 +26,7 @@ face = pygame.transform.scale(face, (W, H))
 cx, cy = W // 2, H // 2
 
 
+
 def get_end(angle_deg, length):
     angle_rad = math.radians(angle_deg - 90)
     x = cx + length * math.cos(angle_rad)
